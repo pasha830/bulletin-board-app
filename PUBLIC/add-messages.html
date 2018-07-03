@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../bulletin-style.css">
+	<title>Add Post</title>
+</head>
+<body>
+	<h1>Post a new message below:</h1>
+	<hr>
+		<br>
+		<br>
+	<form action="/add/message" method="POST">
+		<table>
+
+		<tr>
+			<th>Title:</th>
+			<td>
+				<textarea type="text" name="title" wrap="hard" rows="1" cols="100"></textarea>
+			</td>
+
+		</tr>
+		<tr>
+			<th>Message:</th>
+			<td>
+				<textarea type="text" name="body" wrap="hard" rows="10" cols="100"></textarea>
+			</td>
+		</tr>
+				
+		</table>
+
+			<button>Submit</button>
+
+
+	</form>
+
+
+
+	
+</body>
+</html>

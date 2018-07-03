@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../bulletin-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<title>Bulletin Board</title>
+</head>
+<body>
+	<h1>What's On Your Mind.....?</h1>
+	<hr>
+	<br>
+	<div class="main-btn" style="text-align:center;">
+		<a href ="add-messages.html"><button class="main-btn">Post Something New</button></a>
+		<br>
+		<br>
+	</div>
+	<br>
+	<br>
+	<div style="text-align:center;">
+		<audio controls autoplay>
+  			<source src="../beyonce.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	
+	<br>
+	<br>
+
+	<table align="center">
+		<% for(let i in result.rows) {%>
+		<tr>
+			<th>Title:</th>
+			<td class="title_message"><%= result.rows[i].title  %></td>
+		</tr>
+		<tr>
+			<th class="body_message">Message:</th>
+			<td><%= result.rows[i].body  %></td>
+		</tr>
+		<% } %>
+
+	</table>
+
+
+
+</body>
+</html>

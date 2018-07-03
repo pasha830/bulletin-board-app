@@ -1,0 +1,36 @@
+body {
+	background-image: url("bulletin.jpg");
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	background-size: 100vh;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+table {
+    width: 75%;
+}
+
+
+th {
+	width: 12%;
+    height: 30px;
+    background-color: #696969;
+}
+
+td {
+	background-color: white;
+	opacity: 0.8;
+}
+
+.body_message {
+	background-color: #D3D3D3;
+}
+
+.main-btn {
+	height: 25px;
+}
